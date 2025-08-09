@@ -66,7 +66,7 @@ const deleteTodo = async (req: Request, res: Response) => {
 
     res.status(200).send({
       success: true,
-      message: "Todo Delete successfuly",
+      message: "Todo deleted successfully",
     });
   } catch (error) {
     console.error("error in deleteTodo function", error);
@@ -95,7 +95,7 @@ const updateTodo = async (req: Request, res: Response) => {
 
     res.status(200).send({
       success: true,
-      message: "successfuly update todo",
+      message: data[indexData],
     });
   } catch (error) {
     console.log("Error in update todo function ", error);
